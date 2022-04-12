@@ -3,6 +3,7 @@ const app = express();
 const path = require("path");
 const morgan = require("morgan");
 app.use(morgan("dev"));
+const db = require("./db.js");
 
 app.use(express.static(path.join(__dirname, "./path/to/static/assets")));
 
